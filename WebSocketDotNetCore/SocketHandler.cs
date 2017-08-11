@@ -45,7 +45,7 @@ namespace WebSocketDotNetCore
 
         public static void Map(IApplicationBuilder app)
         {            
-            app.UseWebSockets();
+            
             app.Use(SocketHandler.Acceptor);
         }
     }

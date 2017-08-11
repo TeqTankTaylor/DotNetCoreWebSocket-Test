@@ -30,6 +30,7 @@ namespace WebSocketDotNetCore
             
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseWebSockets();
 
             app.Map("/ws", SocketHandler.Map);
         }
